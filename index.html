@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+		<a href="https://scrimba.com/g/gvuex" target="_blank">Tuto</a>
+		<div>Vuex Demo</div>
+        <div id="app">
+            {{count}}
+            <button @click='increment'>+ (async)</button>
+            <button @click='decrement'>- (sync)</button>
+			<button @click='testAction'>testAction</button>
+			
+			<br>
+            {{testActionState}} Successful Calls
+			
+			<br>
+
+            {{message}}<br>
+            <input v-model='message'/>
+
+        </div>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.1.1/vuex.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
